@@ -6,7 +6,8 @@ import base64
 from colorama import  Fore
 import time
 #⚠️Warning
-# I am not responsible if you use this for illegal purposes
+# EN/ I am not responsible if you use this for illegal purposes
+# VI/ Tôi không chịu trách nhiệm nếu  bạn sử dụng vào mục đích phi pháp!
 
 print(Fore.RED + "Tôi không chịu trách nhiệm nếu bạn sử dụng vào mục đích phi pháp" + Fore.RESET)
 
@@ -168,7 +169,7 @@ async def send_question(session, i, use_proxy=True):
     random_bytes = ''.join(random.choices(string.ascii_letters + string.digits, k=2))
     payload = f"username={username}&question={question}{random_bytes}&deviceId={device_id}&gameSlug=&referrer="
     headers = get_random_headers()
-    proxy = get_random_proxy() if use_proxy else None  # Tùy chọn tắt proxy
+    proxy = get_random_proxy() if use_proxy else None 
 
     start_time = time.time()
 
